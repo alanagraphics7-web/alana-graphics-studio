@@ -1,0 +1,1718 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Alana Graphic Studio | Professional Graphic Design</title>
+
+<meta name="description"
+content="Alana Graphic Studio creates professional logos, flyers, business cards, social media designs, posters, branding and website graphics.">
+
+<style>
+
+/* =========================
+   GLOBAL
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #050505;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+:root {
+    --gold: #d4af37;
+    --gold-light: #f5d76e;
+    --black: #050505;
+    --dark: #0d0d0d;
+    --gray: #aaaaaa;
+    --white: #ffffff;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+button {
+    font-family: inherit;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(5,5,5,0.96);
+    border-bottom: 1px solid rgba(212,175,55,0.25);
+    backdrop-filter: blur(10px);
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    padding: 15px 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+.logo span {
+    color: var(--gold);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 22px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: #ffffff;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--gold);
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 90vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    padding: 80px 20px;
+
+    background:
+        radial-gradient(circle at center,
+        rgba(212,175,55,0.12),
+        transparent 45%);
+}
+
+.hero-content {
+    max-width: 850px;
+}
+
+.hero-logo {
+    width: 130px;
+    height: 130px;
+    object-fit: contain;
+
+    margin: 0 auto 25px;
+
+    border-radius: 50%;
+}
+
+.hero h1 {
+    font-size: clamp(38px, 7vw, 72px);
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: var(--gold);
+}
+
+.hero p {
+    color: var(--gray);
+    font-size: 18px;
+    max-width: 650px;
+    margin: auto;
+}
+
+.hero-buttons {
+    margin-top: 35px;
+
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-block;
+
+    padding: 13px 25px;
+
+    border-radius: 30px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.btn-gold {
+    background: var(--gold);
+    color: #000000;
+}
+
+.btn-gold:hover {
+    background: var(--gold-light);
+    transform: translateY(-2px);
+}
+
+.btn-outline {
+    border: 1px solid var(--gold);
+    color: var(--gold);
+}
+
+.btn-outline:hover {
+    background: var(--gold);
+    color: #000000;
+}
+
+/* =========================
+   GENERAL SECTIONS
+========================= */
+
+section {
+    padding: 90px 20px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title h2 {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.section-title h2 span {
+    color: var(--gold);
+}
+
+.section-title p {
+    color: var(--gray);
+}
+
+/* =========================
+   ABOUT
+========================= */
+
+.about {
+    background: var(--dark);
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.about-text h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.about-text h3 span {
+    color: var(--gold);
+}
+
+.about-text p {
+    color: var(--gray);
+    margin-bottom: 15px;
+}
+
+/* =========================
+   SERVICES
+========================= */
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.service-card {
+    background: #101010;
+
+    border: 1px solid rgba(212,175,55,0.18);
+
+    border-radius: 15px;
+
+    padding: 30px 20px;
+
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-7px);
+    border-color: var(--gold);
+}
+
+.service-icon {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.service-card h3 {
+    color: var(--gold);
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    color: var(--gray);
+    font-size: 14px;
+}
+
+/* =========================
+   PRICES
+========================= */
+
+.prices {
+    background: var(--dark);
+}
+
+.price-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.price-card {
+    background: #101010;
+
+    border: 1px solid rgba(212,175,55,0.2);
+
+    padding: 25px 15px;
+
+    border-radius: 15px;
+
+    text-align: center;
+}
+
+.price-card h3 {
+    font-size: 17px;
+    margin-bottom: 12px;
+}
+
+.price {
+    color: var(--gold);
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* =========================
+   HOW IT WORKS
+========================= */
+
+.steps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.step {
+    text-align: center;
+    padding: 30px;
+}
+
+.step-number {
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 auto 20px;
+
+    border-radius: 50%;
+
+    background: var(--gold);
+    color: #000000;
+
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.step h3 {
+    margin-bottom: 10px;
+}
+
+.step p {
+    color: var(--gray);
+}
+
+/* =========================
+   PORTFOLIO
+========================= */
+
+.portfolio {
+    background: var(--dark);
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.portfolio-item {
+    position: relative;
+    overflow: hidden;
+
+    border-radius: 15px;
+
+    cursor: pointer;
+
+    background: #111;
+
+    border: 1px solid rgba(212,175,55,0.2);
+
+    aspect-ratio: 1 / 1;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    transition: 0.4s;
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.08);
+}
+
+.portfolio-overlay {
+    position: absolute;
+    inset: 0;
+
+    background: rgba(0,0,0,0.65);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+
+    transition: 0.3s;
+}
+
+.portfolio-item:hover .portfolio-overlay {
+    opacity: 1;
+}
+
+.portfolio-overlay h3 {
+    color: var(--gold);
+    font-size: 20px;
+}
+
+/* =========================
+   IMAGE VIEWER
+========================= */
+
+.image-viewer {
+    display: none;
+
+    position: fixed;
+    inset: 0;
+
+    z-index: 3000;
+
+    background: rgba(0,0,0,0.95);
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 25px;
+}
+
+.image-viewer.active {
+    display: flex;
+}
+
+.viewer-image {
+    max-width: 90%;
+    max-height: 85vh;
+
+    object-fit: contain;
+
+    border-radius: 10px;
+
+    box-shadow: 0 0 40px rgba(212,175,55,0.2);
+}
+
+.viewer-close,
+.viewer-prev,
+.viewer-next {
+    position: absolute;
+
+    border: none;
+
+    background: rgba(0,0,0,0.7);
+
+    color: white;
+
+    cursor: pointer;
+
+    z-index: 5;
+
+    transition: 0.3s;
+}
+
+.viewer-close:hover,
+.viewer-prev:hover,
+.viewer-next:hover {
+    color: var(--gold);
+}
+
+.viewer-close {
+    top: 20px;
+    right: 25px;
+
+    font-size: 40px;
+
+    width: 50px;
+    height: 50px;
+}
+
+.viewer-prev,
+.viewer-next {
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    font-size: 55px;
+
+    width: 60px;
+    height: 80px;
+}
+
+.viewer-prev {
+    left: 15px;
+}
+
+.viewer-next {
+    right: 15px;
+}
+
+/* =========================
+   CTA
+========================= */
+
+.cta {
+    text-align: center;
+
+    background:
+        radial-gradient(circle,
+        rgba(212,175,55,0.13),
+        transparent 55%);
+}
+
+.cta h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.cta h2 span {
+    color: var(--gold);
+}
+
+.cta p {
+    color: var(--gray);
+    margin-bottom: 30px;
+}
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact {
+    background: var(--dark);
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.contact-card {
+    background: #101010;
+
+    padding: 30px 20px;
+
+    text-align: center;
+
+    border-radius: 15px;
+
+    border: 1px solid rgba(212,175,55,0.18);
+}
+
+.contact-card h3 {
+    color: var(--gold);
+    margin-bottom: 10px;
+}
+
+.contact-card p,
+.contact-card a {
+    color: var(--gray);
+    word-break: break-word;
+}
+
+.contact-card a:hover {
+    color: var(--gold);
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    padding: 30px 20px;
+
+    text-align: center;
+
+    border-top: 1px solid rgba(212,175,55,0.2);
+
+    color: var(--gray);
+
+    font-size: 14px;
+}
+
+footer span {
+    color: var(--gold);
+}
+
+/* =========================
+   WHATSAPP
+========================= */
+
+.whatsapp-button {
+    position: fixed;
+
+    right: 20px;
+    bottom: 20px;
+
+    z-index: 2000;
+
+    width: 58px;
+    height: 58px;
+
+    border-radius: 50%;
+
+    background: #25D366;
+
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 27px;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+
+    transition: 0.3s;
+}
+
+.whatsapp-button:hover {
+    transform: scale(1.1);
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 850px) {
+
+    .nav-links {
+        gap: 10px;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .price-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .steps {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        min-height: 80vh;
+    }
+
+    section {
+        padding: 70px 15px;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .price-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-title h2 {
+        font-size: 30px;
+    }
+
+    .cta h2 {
+        font-size: 30px;
+    }
+
+    .viewer-prev,
+    .viewer-next {
+        font-size: 40px;
+        width: 45px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- =========================
+     HEADER
+========================= -->
+
+<header>
+
+<nav class="navbar">
+
+<a href="#home" class="logo">
+
+<img src="logo.jpeg" alt="Alana Graphic Studio Logo">
+
+<span>Alana Graphic Studio</span>
+
+</a>
+
+<ul class="nav-links">
+
+<li><a href="#about">About</a></li>
+
+<li><a href="#services">Services</a></li>
+
+<li><a href="#prices">Prices</a></li>
+
+<li><a href="#portfolio">Portfolio</a></li>
+
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="hero" id="home">
+
+<div class="hero-content">
+
+<img
+src="logo.jpeg"
+alt="Alana Graphic Studio"
+class="hero-logo"
+>
+
+<h1>
+Professional Designs.
+<span>Powerful Brands.</span>
+</h1>
+
+<p>
+Bringing Your Ideas To Life with professional graphic design
+that helps businesses, brands and individuals stand out.
+</p>
+
+<div class="hero-buttons">
+
+<a
+href="https://wa.me/2349075490519?text=Hello%20Alana%20Graphic%20Studio"
+class="btn btn-gold"
+target="_blank"
+>
+Start a Project
+</a>
+
+<a
+href="#portfolio"
+class="btn btn-outline"
+>
+View Portfolio
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     ABOUT
+========================= -->
+
+<section class="about" id="about">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>About <span>Us</span></h2>
+
+<p>Creative design with purpose.</p>
+
+</div>
+
+<div class="about-content">
+
+<div class="about-text">
+
+<h3>
+Welcome to
+<span>Alana Graphic Studio</span>
+</h3>
+
+<p>
+We create clean, modern and professional designs
+for businesses, brands, creators and individuals.
+</p>
+
+<p>
+From logos and flyers to social media graphics,
+brand identity and website graphics, our goal is
+to turn your ideas into visuals that communicate.
+</p>
+
+<p>
+Every project is designed with creativity,
+clarity and professionalism.
+</p>
+
+</div>
+
+<div>
+
+<img
+src="logo.jpeg"
+alt="Alana Graphic Studio"
+style="max-width:280px;margin:auto;"
+>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     SERVICES
+========================= -->
+
+<section id="services">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>Our <span>Services</span></h2>
+
+<p>Professional designs for your brand and business.</p>
+
+</div>
+
+<div class="services-grid">
+
+<div class="service-card">
+
+<div class="service-icon">🎨</div>
+
+<h3>Logo Design</h3>
+
+<p>
+Unique logos designed to represent your brand professionally.
+</p>
+
+</div>
+
+
+<div class="service-card">
+
+<div class="service-icon">📱</div>
+
+<h3>Social Media Design</h3>
+
+<p>
+Professional graphics for Instagram, Facebook,
+TikTok and other platforms.
+</p>
+
+</div>
+
+
+<div class="service-card">
+
+<div class="service-icon">📄</div>
+
+<h3>Flyer Design</h3>
+
+<p>
+Eye-catching flyers for promotions, businesses and events.
+</p>
+
+</div>
+
+
+<div class="service-card">
+
+<div class="service-icon">💳</div>
+
+<h3>Business Cards</h3>
+
+<p>
+Clean and professional business card designs.
+</p>
+
+</div>
+
+
+<div class="service-card">
+
+<div class="service-icon">🎉</div>
+
+<h3>Event Posters</h3>
+
+<p>
+Creative posters for events, parties and announcements.
+</p>
+
+</div>
+
+
+<div class="service-card">
+
+<div class="service-icon">🏆</div>
+
+<h3>Brand Identity</h3>
+
+<p>
+Complete visual identity systems that make your brand consistent.
+</p>
+
+</div>
+
+
+<div class="service-card">
+
+<div class="service-icon">📦</div>
+
+<h3>Product Design</h3>
+
+<p>
+Professional graphics for products and packaging.
+</p>
+
+</div>
+
+
+<div class="service-card">
+
+<div class="service-icon">💻</div>
+
+<h3>Website Graphics</h3>
+
+<p>
+Modern visual assets for websites and digital platforms.
+</p>
+
+</div>
+
+
+<div class="service-card">
+
+<div class="service-icon">✨</div>
+
+<h3>Custom Designs</h3>
+
+<p>
+Have something different in mind? Let's create it.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     PRICES
+========================= -->
+
+<section class="prices" id="prices">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>Starter <span>Prices</span></h2>
+
+<p>Simple starting prices for selected services.</p>
+
+</div>
+
+<div class="price-grid">
+
+<div class="price-card">
+
+<h3>Logo Design</h3>
+
+<div class="price">From $55</div>
+
+</div>
+
+
+<div class="price-card">
+
+<h3>Social Media Design</h3>
+
+<div class="price">From $30</div>
+
+</div>
+
+
+<div class="price-card">
+
+<h3>Flyer Design</h3>
+
+<div class="price">From $10</div>
+
+</div>
+
+
+<div class="price-card">
+
+<h3>Business Card</h3>
+
+<div class="price">From $25</div>
+
+</div>
+
+
+<div class="price-card">
+
+<h3>Event Poster</h3>
+
+<div class="price">From $25</div>
+
+</div>
+
+
+<div class="price-card">
+
+<h3>Brand Identity</h3>
+
+<div class="price">From $110</div>
+
+</div>
+
+
+<div class="price-card">
+
+<h3>Product Design</h3>
+
+<div class="price">From $80</div>
+
+</div>
+
+
+<div class="price-card">
+
+<h3>Website Graphics</h3>
+
+<div class="price">From $85</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     HOW IT WORKS
+========================= -->
+
+<section>
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>How It <span>Works</span></h2>
+
+<p>Getting your design is simple.</p>
+
+</div>
+
+<div class="steps">
+
+<div class="step">
+
+<div class="step-number">1</div>
+
+<h3>Contact Us</h3>
+
+<p>
+Tell us what you need and share your project details.
+</p>
+
+</div>
+
+
+<div class="step">
+
+<div class="step-number">2</div>
+
+<h3>We Design</h3>
+
+<p>
+Our design process turns your idea into a professional visual.
+</p>
+
+</div>
+
+
+<div class="step">
+
+<div class="step-number">3</div>
+
+<h3>Receive Your Design</h3>
+
+<p>
+Your completed design is delivered to you digitally.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     PORTFOLIO
+========================= -->
+
+<section class="portfolio" id="portfolio">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>Our <span>Portfolio</span></h2>
+
+<p>Some of our creative work.</p>
+
+</div>
+
+<div class="portfolio-grid">
+
+
+<div
+class="portfolio-item"
+onclick="openViewer(0)"
+>
+
+<img
+src="design1.jpeg"
+alt="Portfolio Design 1"
+>
+
+<div class="portfolio-overlay">
+
+<h3>View Design</h3>
+
+</div>
+
+</div>
+
+
+<div
+class="portfolio-item"
+onclick="openViewer(1)"
+>
+
+<img
+src="design2.jpeg"
+alt="Portfolio Design 2"
+>
+
+<div class="portfolio-overlay">
+
+<h3>View Design</h3>
+
+</div>
+
+</div>
+
+
+<div
+class="portfolio-item"
+onclick="openViewer(2)"
+>
+
+<img
+src="design3.jpeg"
+alt="Portfolio Design 3"
+>
+
+<div class="portfolio-overlay">
+
+<h3>View Design</h3>
+
+</div>
+
+</div>
+
+
+<div
+class="portfolio-item"
+onclick="openViewer(3)"
+>
+
+<img
+src="design4.jpeg"
+alt="Portfolio Design 4"
+>
+
+<div class="portfolio-overlay">
+
+<h3>View Design</h3>
+
+</div>
+
+</div>
+
+
+<div
+class="portfolio-item"
+onclick="openViewer(4)"
+>
+
+<img
+src="design5.jpeg"
+alt="Portfolio Design 5"
+>
+
+<div class="portfolio-overlay">
+
+<h3>View Design</h3>
+
+</div>
+
+</div>
+
+
+<div
+class="portfolio-item"
+onclick="openViewer(5)"
+>
+
+<img
+src="design6.jpeg"
+alt="Portfolio Design 6"
+>
+
+<div class="portfolio-overlay">
+
+<h3>View Design</h3>
+
+</div>
+
+</div>
+
+
+<div
+class="portfolio-item"
+onclick="openViewer(6)"
+>
+
+<img
+src="design7.jpeg"
+alt="Portfolio Design 7"
+>
+
+<div class="portfolio-overlay">
+
+<h3>View Design</h3>
+
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     IMAGE VIEWER
+========================= -->
+
+<div
+class="image-viewer"
+id="imageViewer"
+>
+
+<button
+class="viewer-close"
+onclick="closeViewer()"
+aria-label="Close"
+>
+×
+</button>
+
+
+<button
+class="viewer-prev"
+onclick="previousImage(event)"
+aria-label="Previous image"
+>
+‹
+</button>
+
+
+<img
+id="viewerImage"
+class="viewer-image"
+src=""
+alt="Portfolio preview"
+>
+
+
+<button
+class="viewer-next"
+onclick="nextImage(event)"
+aria-label="Next image"
+>
+›
+</button>
+
+</div>
+
+
+<!-- =========================
+     CTA
+========================= -->
+
+<section class="cta">
+
+<div class="container">
+
+<h2>
+Let's Build Your
+<span>Brand</span>
+</h2>
+
+<p>
+Have an idea? Let's turn it into a professional design.
+</p>
+
+<a
+href="https://wa.me/2349075490519?text=Hello%20Alana%20Graphic%20Studio%2C%20I%20would%20like%20to%20start%20a%20project."
+class="btn btn-gold"
+target="_blank"
+>
+Request a Design
+</a>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     CONTACT
+========================= -->
+
+<section class="contact" id="contact">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>Contact <span>Us</span></h2>
+
+<p>Let's discuss your next project.</p>
+
+</div>
+
+<div class="contact-grid">
+
+
+<div class="contact-card">
+
+<h3>WhatsApp</h3>
+
+<a
+href="https://wa.me/2349075490519"
+target="_blank"
+>
++234 907 549 0519
+</a>
+
+</div>
+
+
+<div class="contact-card">
+
+<h3>Email</h3>
+
+<a
+href="mailto:alanagraphics7@gmail.com"
+>
+alanagraphics7@gmail.com
+</a>
+
+</div>
+
+
+<div class="contact-card">
+
+<h3>Telegram</h3>
+
+<a
+href="https://t.me/AlanaDesigns"
+target="_blank"
+>
+@AlanaDesigns
+</a>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+<p>
+© <span id="year"></span>
+Alana Graphic Studio.
+All Rights Reserved.
+</p>
+
+</footer>
+
+
+<!-- =========================
+     WHATSAPP BUTTON
+========================= -->
+
+<a
+href="https://wa.me/2349075490519?text=Hello%20Alana%20Graphic%20Studio"
+class="whatsapp-button"
+target="_blank"
+aria-label="Contact Alana Graphic Studio on WhatsApp"
+>
+✆
+</a>
+
+
+<!-- =========================
+     JAVASCRIPT
+========================= -->
+
+<script>
+
+/* =========================
+   PORTFOLIO IMAGES
+========================= */
+
+const portfolioImages = [
+
+    "design1.jpeg",
+
+    "design2.jpeg",
+
+    "design3.jpeg",
+
+    "design4.jpeg",
+
+    "design5.jpeg",
+
+    "design6.jpeg",
+
+    "design7.jpeg"
+
+];
+
+
+/* =========================
+   VIEWER VARIABLES
+========================= */
+
+let currentImage = 0;
+
+const imageViewer =
+    document.getElementById("imageViewer");
+
+const viewerImage =
+    document.getElementById("viewerImage");
+
+
+/* =========================
+   OPEN VIEWER
+========================= */
+
+function openViewer(index) {
+
+    currentImage = index;
+
+    viewerImage.src =
+        portfolioImages[currentImage];
+
+    imageViewer.classList.add("active");
+
+    document.body.style.overflow = "hidden";
+
+}
+
+
+/* =========================
+   CLOSE VIEWER
+========================= */
+
+function closeViewer() {
+
+    imageViewer.classList.remove("active");
+
+    document.body.style.overflow = "";
+
+    viewerImage.src = "";
+
+}
+
+
+/* =========================
+   NEXT IMAGE
+========================= */
+
+function nextImage(event) {
+
+    if (event) {
+        event.stopPropagation();
+    }
+
+    currentImage =
+        (currentImage + 1)
+        % portfolioImages.length;
+
+    viewerImage.src =
+        portfolioImages[currentImage];
+
+}
+
+
+/* =========================
+   PREVIOUS IMAGE
+========================= */
+
+function previousImage(event) {
+
+    if (event) {
+        event.stopPropagation();
+    }
+
+    currentImage =
+        (currentImage - 1 +
+        portfolioImages.length)
+        % portfolioImages.length;
+
+    viewerImage.src =
+        portfolioImages[currentImage];
+
+}
+
+
+/* =========================
+   CLOSE WHEN CLICKING
+   OUTSIDE IMAGE
+========================= */
+
+imageViewer.addEventListener(
+    "click",
+    function(event) {
+
+        if (event.target === imageViewer) {
+
+            closeViewer();
+
+        }
+
+    }
+);
+
+
+/* =========================
+   KEYBOARD CONTROLS
+========================= */
+
+document.addEventListener(
+    "keydown",
+    function(event) {
+
+        if (
+            !imageViewer.classList.contains("active")
+        ) {
+            return;
+        }
+
+
+        if (event.key === "Escape") {
+
+            closeViewer();
+
+        }
+
+
+        if (event.key === "ArrowRight") {
+
+            nextImage(event);
+
+        }
+
+
+        if (event.key === "ArrowLeft") {
+
+            previousImage(event);
+
+        }
+
+    }
+);
+
+
+/* =========================
+   FOOTER YEAR
+========================= */
+
+document.getElementById("year").textContent =
+    new Date().getFullYear();
+
+
+</script>
+
+</body>
+</html>
